@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'cinzel';
+    src:url('../fonts/Cinzel-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'cloister';
+    src:url('../fonts/CloisterBlack.ttf');
+}
+
+@font-face {
+    font-family: 'quicksand-regular';
+    src:url('../fonts/Quicksand-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'quicksand-light';
+    src:url('../fonts/Quicksand-Light.ttf');
+}
+
+.navbar {
+    margin-top: 40px;
+    background-color: #006680!important;
+}
+
+header {
+    background-color: #006680;
+    height: 50px;
+    margin-top: 30px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: -25px;
+    margin-left: -10px;
+}
+
+.page-container {
+    box-shadow: 0px 0px 1px 3px #888;
+}
+
+.title {
+    font-family: 'cloister';
+    font-size: 1.8em;
+    color: #dfdfdf;
+    padding-left: 10px;
+    line-height: 50px;
+}
+
+h1, h2, h3 {
+    font-family: 'quicksand-light';
+}
+p {
+    font-family: 'quicksand-regular';
+}
