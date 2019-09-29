@@ -18,27 +18,32 @@
     src:url('../fonts/Quicksand-Light.ttf');
 }
 
+* {
+    font-family: 'quicksand-regular';
+    color: #555;
+}
+
 .navbar {
     margin-top: 40px;
-    background-color: #006680!important;
 }
 
 header {
     background-color: #006680;
-    height: 50px;
+    height: 70px;
     margin-top: 30px;
 }
 
 header img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     float: left;
     margin-top: -25px;
-    margin-left: -10px;
+    margin-left: 10px;
 }
 
 .page-container {
-    box-shadow: 0px 0px 1px 3px #888;
+    box-shadow: 0px 3px 4px 1px #888;
+    padding: 0px !important;
 }
 
 .title {
@@ -46,12 +51,123 @@ header img {
     font-size: 1.8em;
     color: #dfdfdf;
     padding-left: 10px;
-    line-height: 50px;
+    padding-bottom: 0;
+}
+.subtitle{
+    font-family: 'quicksand-light';
+    font-size: 0.8em;
+    color: #dfdfdf;
+    padding-left: 10px;
+    line-height: 15px;
+    float: left;
+    margin-top: -8px;
 }
 
 h1, h2, h3 {
-    font-family: 'quicksand-light';
+    font-family: 'cinzel';
 }
+
+h2 {
+    padding-bottom: 0px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
 p {
     font-family: 'quicksand-regular';
+}
+
+.featured{
+    background-image: url('../images/hs_building_darken.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 1em 1em;
+    color: #dfdfdf;
+}
+
+.search-form {
+    float: right;
+    width: 250px;
+    margin-top: 20px;
+    margin-right: 10px;
+    opacity: 0.75;
+}
+
+.search-form input,
+.search-form button {
+    background-color: #54a0b3;
+    font-family: 'quicksand-regular';
+    font-size: 0.8em;
+    border: 1px solid rgba(200,200,200,80);
+}
+
+.search-form button {
+    color: rgb(200,200,200);
+}
+
+.main-nav {
+    background-color: #2c8aa1;
+    height: 100%;
+}
+
+footer {
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #999;
+    text-align: center;
+}
+
+.main-nav a {
+    background-color: #006680 !important;
+    color: #dfdfdf;
+}
+
+.main-nav a:hover {
+    background-color: #218097 !important;
+    color: #fff;
+}
+
+.card-header {
+    background-color: #006680;
+    color: #bccedd;
+}
+
+.blog-title {
+    color: rgb(36, 100, 112);
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+a.blog-title-link {
+    text-decoration: none;
+}
+
+.ads {
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.blog-details {
+    color: #999;
+    font-size: 0.8em;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+@media screen and (min-width: 992px) {
+    .featured {
+        min-height: 400px;
+        padding: 3em 1em;
+    }
+
+    .featured p {
+        font-family: 'quicksand-light';
+        font-size: 1.35em;
+        color: #bccedd;
+    }
 }
