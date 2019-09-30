@@ -20,4 +20,5 @@ Route::post('/login', 'AdminController@login');
 Route::group(['middleware'=>['auth']], function(){
     Route::get('/admin/home', 'AdminController@home')->name('home');
     Route::get('/logout', 'AdminController@logout');
+    Route::get('/admin/posts', 'PostController@index');
 });
