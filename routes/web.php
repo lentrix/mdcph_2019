@@ -12,3 +12,12 @@
 */
 
 Route::get('/', 'SiteController@index');
+
+Route::get('/admin', 'AdminController@loginForm')->name('login');
+
+Route::post('/login', 'AdminController@login');
+
+Route::group(['middleware'=>['auth']], function(){
+    Route::get('/admin/home', 'AdminController@home')->name('home');
+    Route::get('/logout', 'AdminController@logout');
+});
