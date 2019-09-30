@@ -21,4 +21,6 @@ Route::group(['middleware'=>['auth']], function(){
     Route::get('/admin/home', 'AdminController@home')->name('home');
     Route::get('/logout', 'AdminController@logout');
     Route::get('/admin/posts', 'PostController@index');
+    Route::get("/admin/posts/{post}", 'PostController@edit');
+    Route::patch('/admin/post/{post}', 'PostController@update');
 });

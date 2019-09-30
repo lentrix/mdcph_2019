@@ -46,13 +46,15 @@
     <h2>MDC Updates</h2>
 </div>
 <div class="row">
-    @foreach(["What If The Title is Long",'Title 2', 'Title 3'] as $title)
+    @foreach($p3 as $post)
 
     <div class="col-lg-4">
-        <a href="#" class="blog-title-link"><h3 class="blog-title">{{$title}}</h3></a>
-        <p class="blog-details">by Some Author<br>{{date('M d, Y')}}</p>
+        <a href='{{url("/post/$post->id")}}' class="blog-title-link"><h3 class="blog-title">{{$post->title}}</h3></a>
+        <p class="blog-details">{{$post->user->name}} <br>{{$post->created_at}}</p>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae soluta eum, rerum nemo quas ea sed. Similique laudantium ut debitis magnam, iusto maxime tempora quasi iste, reiciendis, asperiores suscipit consectetur!
+            {{$post->snip(100)}}
+            <br>
+            <a href='{{url("/post/$post->id")}}'>More..</a>
         </p>
     </div>
 

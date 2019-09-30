@@ -21,7 +21,12 @@
                 <td>{{$post->user->name}}</td>
                 <td>{{$post->created_at}}</td>
                 <td>{{$post->updated_at}}</td>
-                <td>...</td>
+                <td>
+                    <a href='{{url("/admin/posts/$post->id")}}' title="Edit this post">
+                        <img src="{{asset('images/icons/edit.png')}}"
+                                alt="edit" style="width:18px; height:18px">
+                    </a>
+                </td>
             </tr>
 
             @endforeach

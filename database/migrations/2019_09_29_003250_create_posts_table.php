@@ -19,6 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('title', 90);
             $table->mediumText('content');
             $table->string('categories')->default('uncategorized');
+            $table->boolean('published')->default(0);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
